@@ -13,6 +13,12 @@ pipeline {
 			  sh 'mvn --version'
             }
         }
+		stage('Git Clone') {
+            steps {
+			 git credentialsId: 'git', url: 'https://github.com/kartikeyapro/ks.git'
+            }
+        }		
+		
 		stage('Maven Clean') {
             steps {
 			  sh 'mvn clean'
