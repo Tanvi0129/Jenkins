@@ -8,7 +8,7 @@ node {
     stage('Maven Validate') {
         sh 'mvn validate'
     }
-	stage('Maven Validate') {
+	stage('SonarScan') {
 		sh 'mvn sonar:sonar -Dsonar.host.url=http://34.68.2.232:9000 -Dsonar.login=c03b084c29bdf53c6a033069a53c5616802692b8'
 	}
 	 stage('Maven Compile') {
