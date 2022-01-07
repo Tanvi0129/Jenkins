@@ -1,6 +1,6 @@
 node{
     stage('git clone'){
-      git credentialsId: 'pt', url: 'https://github.com/Tanvi0129/Jenkins.git'
+      git credentialsId: 'git', url: 'https://github.com/Tanvi0129/Jenkins.git'
      }
     stage('maven clean'){
 	   sh 'maven clean'
