@@ -6,18 +6,18 @@ node{
          sh 'mvn clean'
      }     
     stage('maven Validate'){
-         sh 'mvn Validate'
+         sh 'mvn validate'
     }
     stage('maven Compile'){
 	 sh 'mvn Compile' 
     }
     stage('maven Test'){
-	 sh 'mvn Test'  
+	 sh 'mvn test'  
     }
     stage('maven Deploy'){
-	 sh 'mvn Deploy'
+	 sh 'mvn deploy'
     }
     stage('maven Package'){
-	 sh  'mvn Package'
+	 sh  'mvn package'
     }
 }
