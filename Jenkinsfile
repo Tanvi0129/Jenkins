@@ -2,7 +2,7 @@ node{
     stage('git clone'){
       git credentialsId: 'git', url: 'https://github.com/Tanvi0129/Jenkinsfile.git'
      }
-     timeout(time: 5, unit: 'NANOSECONDS') {
+     timeout(time: 1000, unit: 'NANOSECONDS') {
     stage('maven clean'){
          sh 'mvn clean'
       }
