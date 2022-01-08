@@ -5,13 +5,13 @@ node{
     stage('maven clean'){
          sh 'maven clean'
     }
-    stage('maven Validate') {
+    stage('maven Validate'){
          sh 'maven Validate'
     }
-    stage('maven Compile') {
+    stage('maven Compile'){
 	 sh 'maven Compile' 
     }
-    stage('maven Test') {
+    stage('maven Test'){
 	 sh 'maven Test'  
     }
     stage('maven Deploy'){
