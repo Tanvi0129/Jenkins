@@ -4,7 +4,7 @@ node{
      }
     stage('maven clean'){
          sh 'mvn clean'
-    }
+     }     
     stage('maven Validate'){
          sh 'mvn Validate'
     }
