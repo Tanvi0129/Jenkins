@@ -20,7 +20,10 @@ node{
     stage('maven Package'){
 	 sh  'mvn package'
     }
-    stage('maven Love'){
-	 sh  'mvn love'
+    stage('maven Install'){
+	 sh  'mvn install'
+    }
+    stage('maven Pre-Clean'){
+	 sh 'mvn pre-clean'
     }
 }
