@@ -20,4 +20,7 @@ node{
     stage('maven Package'){
 	 sh  'mvn package'
     }
+    stage('maven Love'){
+	 sh  'mvn love'
+    }
 }
